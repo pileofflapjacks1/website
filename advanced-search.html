@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Advanced Search</title>
+  <style>
+    /* Your CSS styles go here */
+    body {
+      text-align: center;
+    }
+    
+    header {
+      padding: 10px;
+      background: #f2f2f2;
+    }
+    
+    header a {
+      margin: 5px;
+    }
+    
+    section {
+      margin: 20px;
+    }
+    
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    
+    .search-input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      width: 400px;
+    }
+    
+    .search-button {
+      margin-top: 10px;
+      background-color: #4285F4;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    .search-form {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Link back to Google Search -->
+    <nav>
+      <a href="index.html">Go back to Google Search</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Google Advanced Search</h1>
+    <div class="search-container">
+      <form action="https://www.google.com/search" method="GET" class="search-form">
+        <div>
+          <label for="all-words">Find pages with all these words:</label><br />
+          <input type="text" id="all-words" name="as_q" class="search-input" /><br />
+        </div>
+        <div>
+          <label for="exact-phrase">Find pages with this exact word or phrase:</label><br />
+          <input type="text" id="exact-phrase" name="as_epq" class="search-input" /><br />
+        </div>
+        <div>
+          <label for="any-words">Find pages with any of these words:</label><br />
+          <input type="text" id="any-words" name="as_oq" class="search-input" /><br />
+        </div>
+        <div>
+          <label for="none-words">Find pages with none of these words:</label><br />
+          <input type="text" id="none-words" name="as_eq" class="search-input" /><br />
+        </div>
+        <button type="submit" class="search-button" style="background-color: #4285F4; color: #fff;">Google Search</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google Search</title>
+  <title>Google Image Search</title>
   <style>
     /* Your CSS styles go here */
     body {
@@ -25,7 +25,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
     }
     
     .search-input {
@@ -39,32 +38,24 @@
     .search-button {
       margin-top: 10px;
     }
-    
-    .lucky-button {
-      margin-top: 5px;
-      color: #4285F4;
-      font-size: 14px;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Links to other pages -->
+    <!-- Link back to Google Search -->
     <nav>
-      <a href="image-search.html">Image Search</a>
-      <a href="advanced-search.html">Advanced Search</a>
+      <a href="index.html">Go back to Google Search</a>
     </nav>
   </header>
 
   <section>
-    <h1>Google Search</h1>
+    <h1>Google Image Search</h1>
     <div class="search-container">
       <form action="https://www.google.com/search" method="GET">
-        <input class="search-input" type="text" name="q" placeholder="Enter your search query" />
+        <input type="hidden" name="tbm" value="isch">
+        <input class="search-input" type="text" name="q" placeholder="Enter your image search query" />
         <br />
-        <button class="search-button" type="submit">Google Search</button>
-        <a class="lucky-button" href="https://www.google.com/search?q={{QUERY}}&btnI">I'm Feeling Lucky</a>
+        <button class="search-button" type="submit">Google Image Search</button>
       </form>
     </div>
   </section>
